@@ -26,7 +26,7 @@ function Testimonials() {
               </p>
               <p className="mt-4 text-xs text-fun-gray">
                 <b className="text-fun-pink font-monospace">{item.name}</b> -{" "}
-                {item.job}
+                {/* {item.job} */}
               </p>
               {index === 2 && (
                 <img
