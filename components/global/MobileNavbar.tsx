@@ -1,25 +1,31 @@
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import {routes} from "@/data/global";
-import useDelayedRender from "use-delayed-render";
+import { routes } from "@/data/global";
+// import useDelayedRender from "use-delayed-render";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300,
-    }
-  );
+  const [isMenuMounted, setIsMenuMounted] = useState(false);
+  const [isMenuRendered, setIsMenuRendered] = useState(false);
+  // const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+  //   isMenuOpen,
+  //   {
+  //     enterDelay: 20,
+  //     exitDelay: 300,
+  //   }
+  // );
 
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
+      setIsMenuRendered(false);
+      setIsMenuMounted(false);
       document.body.style.overflow = "";
     } else {
       setIsMenuOpen(true);
+      setIsMenuRendered(true);
+      setIsMenuMounted(true);
       document.body.style.overflow = "hidden";
     }
   }
@@ -33,7 +39,9 @@ export default function MobileNavbar() {
   return (
     <nav>
       <div
-        className={`w-full justify-between flex items-center ${isMenuRendered && 'bg-bg'} p-5`}
+        className={`w-full justify-between flex items-center ${
+          isMenuRendered && "bg-bg"
+        } p-5`}
         style={{ zIndex: 101 }}
       >
         <li className="list-none font-bold text-lg">
