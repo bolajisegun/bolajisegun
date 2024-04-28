@@ -35,7 +35,7 @@ const projects: Project[] = [
     img: "/static/projects/react.png",
     link: "react-project-green-zeta.vercel.app",
     github: "https://github.com/bolajiSegun/react-project",
-    tags: ["React", "Tailwind", "API"],
+    tags: ["React", "Tailwind", "API", "Node.js"],
   },
 ];
 
