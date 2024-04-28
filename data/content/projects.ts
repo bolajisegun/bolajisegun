@@ -25,7 +25,7 @@ const projects: Project[] = [
     desc: "Just a landing page design to practice your proficiency in web-development fundamentals",
     img: "/static/projects/balo.png",
     link: "https://bolajisegun.github.io/Balo-Project/Html",
-    github: "https://bolajisegun.github.io/Balo-Project",
+    github: "https://github.com/bolajiSegun/Balo-Project",
     tags: ["HTML", "CSS", "Javascript"],
   },
   {
@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "React",
     desc: "A fun way to check the price of bitcoin! Cloudy days, sunny days, and Bitcoin Storms!",
     img: "/static/projects/react.png",
-    link: "https://bitcointemp.com",
+    link: "react-project-green-zeta.vercel.app",
     github: "https://github.com/bolajiSegun/react-project",
     tags: ["React", "Tailwind", "API"],
   },
