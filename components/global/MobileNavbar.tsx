@@ -45,13 +45,7 @@ export default function MobileNavbar() {
         style={{ zIndex: 101 }}
       >
         <li className="list-none font-bold text-lg">
-          <Link href="/">
-            <img
-              className="mr-3"
-              src="/static/logos/logo_full.svg"
-              width="160"
-            />
-          </Link>
+          <Link href="/">BolajiSG</Link>
         </li>
         <button
           className="burger visible md:hidden"
