@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "React",
-    desc: "A fun way to check the price of bitcoin! Cloudy days, sunny days, and Bitcoin Storms!",
+    desc: "Just a simple react website that encompasses the use of authentication and authorization functionality, no special concentration the ui",
     img: "/static/projects/react.png",
     link: "react-project-green-zeta.vercel.app",
     github: "https://github.com/bolajiSegun/react-project",
