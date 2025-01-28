@@ -7,7 +7,7 @@ const projects: Project[] = [
     id: 0,
     title: "Animated Landing Page",
     desc: "A website that allow you track your progress",
-    img: "/static/projects/getlinked.png",
+    img: "/static/projects/trackit.png",
     link: "https://trackit-seven-phi.vercel.app/",
     tags: ["Next JS", "Tailwind CSS", "Framer-motion", "Typescript"],
   },
